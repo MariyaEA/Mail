@@ -1,0 +1,52 @@
+{% load static %} {% block body %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="{% static 'mail\fonts\material-design-iconic-font\css\material-design-iconic-font.css' %}" />
+        <link rel="icon" type="image/png" href="{% static 'mail\images\logo.jpg' %}" />
+
+    <!-- STYLE CSS -->
+    <link href="{% static 'mail\reg.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="wrapper_login">
+        <div class="inner">
+            <div class="image-holder">
+                <img src="{% static 'mail\images\logo.jpg' %}" alt="" ALIGN="left" /> <h3 style="margin-top: 200px;margin-left:3px; font-family: cursive;">myMail</h3>
+            </div>
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <h3>Log in</h3>
+                {% if message %}
+                <div>{{ message }}</div>
+            {% endif %}
+                <div class="form-wrapper">
+                    <input type="email" placeholder="Email Address" class="form-control" name="email" required />
+                    <i class="zmdi zmdi-email"></i>
+                </div>
+
+                <div class="form-wrapper">
+                    <input type="password" placeholder="Password" class="form-control" name="password" required />
+                    <i class="zmdi zmdi-lock"></i>
+                </div>
+
+                <button type="submit" value="Login">
+                    Login
+                    <i class="zmdi zmdi-arrow-right"></i></button><br />
+                Don't have an account? <a href="{% url 'register' %}">Register here.</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+{% endblock %}
