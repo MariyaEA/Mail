@@ -8,13 +8,13 @@ Mail is the third project for Harvard CS50's Web Programming with Python and Jav
 A [full demo of my project](https://youtu.be/FBX_IZ0V4MQ?list=PLFXLIM6hnNVmPzRpnuOI8Og5DBVxKu15_) can be viewed on YouTube along with all [other CS50 Web Projects](https://www.youtube.com/playlist?list=PLFXLIM6hnNVmPzRpnuOI8Og5DBVxKu15_).
 
 Note the quality may be low due to conversion from video to GIF format. <br/>
-**Login and register** <br/>
+**Login and register** <br/><br/>
 <img src="mail/static/mail_login_register.gif" width=65%/>
-<br/> **Email details** <br/>
+<br/> **Email details** <br/><br/>
 <img src="mail/static/mail_email_details.gif" width=65%/>
-<br/> **Compose email** <br/>
+<br/> **Compose email** <br/><br/>
 <img src="mail/static/mail_compose.gif" width=65%/>
-<br/> **Archive email** <br/>
+<br/> **Archive email** <br/><br/>
 <img src="mail/static/mail_archive.gif" width=65%/>
 
 ### Architecture
